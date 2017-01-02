@@ -1,5 +1,5 @@
 This project compresses any file by taking 8-bit as sampling length. i.e it
-considers every byte as symbols and calculated the frequncy and tree on this.
+considers every byte as symbols and calculates the frequncy and constructs tree on this.
 Compression percentage depends upon the amount of redudancy that exists between
 elements. i.e. Redudancy in a file is directly proportional to the compression
 percentage. But, compression also depends on the amount of information not used
@@ -20,7 +20,7 @@ To Compress:
 This command will create a file named file_to_be_compressed.pkr
 
 To Decompress:
-> ./decom file_to_be_decompressed.pkt
+> ./decom file_to_be_decompressed.pkr
 This command decompresses the file and puts it in a directory named
 file_to_be_decompressed.pkrout inside which the decompressed file exists.
 
