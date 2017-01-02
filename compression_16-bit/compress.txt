@@ -1,0 +1,3 @@
+ProperCount:651  ZeroCount:0
+
+No of compressed shorts=:5222

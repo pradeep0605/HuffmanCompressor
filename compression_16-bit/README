@@ -1,0 +1,26 @@
+This project compresses any file by taking 16-bit as sampling length. i.e it
+considers every byte as symbols and calculated the frequncy and tree on this.
+Compression percentage depends upon the amount of redudancy that exists between
+elements. i.e. Redudancy in a file is directly proportional to the compression
+percentage. But, compression also depends on the amount of information not used
+in the bit coverage. For e.g. In a 16-bit sample, there can be maximum of 65536
+different values. In a file, if there are only 10,000 of these values are used,
+then compression percentage increases. Thus compression depends on redundancy
+and number of unique values within the bit coverage.
+
+Also note that with very small files (few bytes), the compressed file might be
+larger because of the necessary information, needed for decompression, in the header.
+
+To compile:
+> make clean
+> make
+
+To Compress:
+> ./comp file_to_be_compressed
+This command will create a file named file_to_be_compressed.pkr
+
+To Decompress:
+> ./decom file_to_be_decompressed.pkt
+This command decompresses the file and puts it in a directory named
+file_to_be_decompressed.pkrout inside which the decompressed file exists.
+
